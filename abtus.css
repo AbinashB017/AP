@@ -1,0 +1,76 @@
+/* abtus.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wellth-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wellth-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wellth-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.slide-in-content {
+    display: none;
+    padding: 20px;
+    animation: slideInRight 0.5s forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.content-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.heading-2 {
+    color: #333;
+}
+
+.heading-3 {
+    color: #555;
+}
+
+.paragraph {
+    color: #777;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #002b36; /* deep blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #004080; /* darker blue on hover */
+}
